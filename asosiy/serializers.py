@@ -10,3 +10,8 @@ class AudiosSerializer(serializers.ModelSerializer):
     class Meta:
         model = Audios
         fields = '__all__'
+    #
+    # def valitation_location(self, qiymat):
+    #     if qiymat[:-4] != ".mp3":
+    #         raise serializers.ValidationError("Faylni noto'g'ri kiritdingiz")
+    #     return qiymat
